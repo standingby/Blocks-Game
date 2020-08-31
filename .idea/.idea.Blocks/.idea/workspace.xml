@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c224cb19-7c8c-4f5e-acb2-775319cd4f9d" name="Default Changelist" comment="" />
+    <list default="true" id="c224cb19-7c8c-4f5e-acb2-775319cd4f9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Cube To Place Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Cube To Place Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Cube.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Cube.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/27/f9ef55c0/Collision.cs" root0="SKIP_HIGHLIGHTING" />
@@ -15,10 +35,12 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraRotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeExploder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1gqbKSz5mv4JMI7uChzAr5ZvOId" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,6 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1598845007962</updated>
       <workItem from="1598845011659" duration="1843000" />
+      <workItem from="1598881044035" duration="2866000" />
+      <workItem from="1598884024104" duration="3000" />
     </task>
     <servers />
   </component>
@@ -65,13 +89,25 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1513" y="444" key="RiderGenerateDialog" timestamp="1598845110498">
+    <state x="-1513" y="444" key="RiderGenerateDialog" timestamp="1598881076190">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="-1513" y="444" key="RiderGenerateDialog/0.0.1920.1040/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1598845110498" />
+    <state x="-1513" y="444" key="RiderGenerateDialog/0.0.1920.1040/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1598881076190" />
   </component>
 </project>
