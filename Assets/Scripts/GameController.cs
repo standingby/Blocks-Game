@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -12,6 +13,10 @@ public class GameController : MonoBehaviour
     public GameObject cubeToCreate, allCubes;
 
     private Rigidbody _allCubesBody;
+
+    private bool _isLose;
+
+    private Coroutine _showCubePosition;
 
     private readonly List<Vector3> _allCubePositions = new List<Vector3>
     {
@@ -30,19 +35,19 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         _allCubesBody = allCubes.GetComponent<Rigidbody>();
-        StartCoroutine(ShowCubePosition());
+        _showCubePosition = StartCoroutine(ShowCubePosition());
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+        if ((Input.GetMouseButtonDown(0) || Input.touchCount > 0) && cubeToPlace != null)
         {
 #if !UNITY_EDITOR
 if (Input.GetTouch(0).phase != TouchPhase.Began)
     return;
 #endif
 
-            GameObject newCube = Instantiate(cubeToCreate, cubeToPlace.position, Quaternion.identity) as GameObject;
+            var newCube = Instantiate(cubeToCreate, cubeToPlace.position, Quaternion.identity) as GameObject;
             newCube.transform.SetParent(allCubes.transform);
             _currentCube.SetVector(cubeToPlace.position);
             _allCubePositions.Add(_currentCube.GetVector());
@@ -50,12 +55,17 @@ if (Input.GetTouch(0).phase != TouchPhase.Began)
             //Update kinematic physics behavior
             _allCubesBody.isKinematic = true;
             _allCubesBody.isKinematic = false;
-            
+
             SpawnPositions();
         }
+
+        if (_isLose || _allCubesBody.velocity.magnitude != 0.1f) return;
+        Destroy(cubeToPlace.gameObject);
+        _isLose = true;
+        StopCoroutine(_showCubePosition);
     }
 
-    IEnumerator ShowCubePosition()
+    private IEnumerator ShowCubePosition()
     {
         while (true)
         {
@@ -92,20 +102,8 @@ if (Input.GetTouch(0).phase != TouchPhase.Began)
 
     private bool IsPositionEmpty(Vector3 targetPosition)
     {
-        if (targetPosition.y == 0)
-        {
-            return false;
-        }
-
-        foreach (var position in _allCubePositions)
-        {
-            if (position.x == targetPosition.x && position.y == targetPosition.y && position.z == targetPosition.z)
-            {
-                return false;
-            }
-        }
-
-        return true;
+        return targetPosition.y != 0 && _allCubePositions.All(position =>
+            position.x != targetPosition.x || position.y != targetPosition.y || position.z != targetPosition.z);
     }
 }
 
