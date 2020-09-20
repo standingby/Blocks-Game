@@ -6,12 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c224cb19-7c8c-4f5e-acb2-775319cd4f9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blocks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeExploder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeExploder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/0e/cfc9aec3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/27/f9ef55c0/Collision.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,9 +30,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraRotator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeExploder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -47,6 +46,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -82,6 +82,7 @@
       <workItem from="1598960580624" duration="1360000" />
       <workItem from="1599062031962" duration="679000" />
       <workItem from="1599496616030" duration="1610000" />
+      <workItem from="1600584411533" duration="1613000" />
     </task>
     <servers />
   </component>
